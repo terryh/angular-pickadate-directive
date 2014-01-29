@@ -3,7 +3,7 @@ Bower Component for a simple AngularJS directive using [pickadate.js](http://ams
 
 ## Usage
 
-1. Made sure the pickadate lib and jquery are loaded.
+1. Make sure the pickadate lib and jquery are loaded.
 2. Add `ng.pickadate` as a module dependency to your angular app.
 3. Insert the `pick-Adate` or `pick-Atime` directive into your template:
 
