@@ -1,0 +1,8 @@
+{
+  "name": "angular-pickadate-directive",
+  "version": "0.0.1",
+  "main": "ng-pickadate.js",
+  "dependencies": {
+    "angular": "~1.0.5"
+  }
+}
