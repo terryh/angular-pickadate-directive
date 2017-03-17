@@ -14,6 +14,9 @@ angular.module('ng.pickadate', []).
         var ngModel = $parse(attrs.ngModel);
         element.pickadate({
           format: 'yyyy/mm/dd',
+          onStart: function () {
+            this.set('select', ngModel);
+          },
           onSet: function(e){
             ngModel.assign(scope, this.get());
           }
@@ -29,6 +32,9 @@ angular.module('ng.pickadate', []).
       link: function(scope, element, attrs) {
         var ngModel = $parse(attrs.ngModel);
         element.pickatime({
+          onStart: function () {
+            this.set('select', ngModel);
+          },
           onSet: function(e){
             ngModel.assign(scope, this.get());
           }
